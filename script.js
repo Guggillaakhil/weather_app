@@ -29,6 +29,7 @@ const searchweather = () => {
 
                 // Update temperature and weather description
                 temperature.querySelector('img').src = 'https://openweathermap.org/img/wn/' + data.weather[0].icon + '.png';
+                  cels.innerText = Math.ceil(data.main.temp);
                 description.innerText = data.weather[0].description;
 
                 // Update weather details
